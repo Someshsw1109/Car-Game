@@ -12,12 +12,12 @@ screen = pygame.display.set_mode((800, 600))
 pygame.display.set_caption("CAR RACING")
 
 # Loading all images
-c1_img = pygame.image.load("car1.jpg")
+c1_img = pygame.image.load("img_path")
 clock = pygame.time.Clock()
-grass = pygame.image.load("grass.jpg")
-y_strip = pygame.image.load("y_strip.jpg")
-strip = pygame.image.load("strip.jpg")
-start = pygame.image.load("start.jpg")
+grass = pygame.image.load("img_path")
+y_strip = pygame.image.load("img_path")
+strip = pygame.image.load("img_path")
+start = pygame.image.load("img_path")
 
 
 # Function for getting all images
@@ -59,17 +59,17 @@ level = 0
 # Function for enemy cars
 def obstacle(obs_x, obs_y, obs):
     if obs == 0:
-        obs_img = pygame.image.load("car2.jpg")
+        obs_img = pygame.image.load("img_path")
     elif obs == 1:
-        obs_img = pygame.image.load("car3.jpg")
+        obs_img = pygame.image.load("img_path")
     elif obs == 2:
-        obs_img = pygame.image.load("car4.jpg")
+        obs_img = pygame.image.load("img_path")
     elif obs == 3:
-        obs_img = pygame.image.load("car5.jpg")
+        obs_img = pygame.image.load("img_path")
     elif obs == 4:
-        obs_img = pygame.image.load("car6.jpg")
+        obs_img = pygame.image.load("img_path")
     elif obs == 5:
-        obs_img = pygame.image.load("car7.jpg")
+        obs_img = pygame.image.load("img_path")
     screen.blit(obs_img, (obs_x, obs_y))
 
 
